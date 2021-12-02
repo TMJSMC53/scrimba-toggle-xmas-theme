@@ -1,3 +1,5 @@
+/* Flakes credit goes to: https://reactgo.com/css-snow-animation/ */
+
 :root {
   --wine-red: #c7375f;
   --bright-red: #d42d2f;
@@ -33,6 +35,8 @@ body {
   min-width: 350px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  height: 100vh;
+  overflow: hidden;
 }
 
 p {
@@ -40,6 +44,10 @@ p {
 }
 
 .radio-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 200px;
   font-size: 22px;
 }
@@ -59,4 +67,21 @@ p {
 .snow .container {
   color: #f0f4f7;
   background-color: var(--dark-green);
+}
+
+.flake {
+  color: rgb(247, 252, 243);
+  font-size: 2rem;
+  padding: 1rem;
+  animation: fall 2s linear forwards infinite;
+  animation-delay: 1s;
+}
+
+@keyframes fall {
+  from {
+    transform: translateY(-10vh);
+  }
+  to {
+    transform: translateY(100vh);
+  }
 }
