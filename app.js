@@ -14,18 +14,6 @@ christmasBtn.addEventListener("click", () => {
   }
 });
 
-// snowBtn.addEventListener("change", function () {
-//   body.classList.toggle("christmas");
-//   // body.classList.remove("snow");
-//   greeting.innerText = "";
-// });
-
-// snowBtn.addEventListener("click", () => {
-//   body.classList.add("snow");
-//   body.classList.remove("christmas");
-//   greeting.innerHTML = "❄️ Let it snow! ❄️";
-// });
-
 // Task:
 //- Add the functionality to switch the theme between 'Christmas' and 'snow'.
 
